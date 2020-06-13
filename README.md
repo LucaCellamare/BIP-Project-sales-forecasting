@@ -1,7 +1,7 @@
 # BIP-Project-sales-forecasting
 
 ### Course Project
-**Dataset Description:
+**Dataset Description**:
 
 This year project is based on a sales forecasting dataset with aggregated information for different products (SKU) throughout a 3-years time window:
 •
