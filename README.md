@@ -1,6 +1,20 @@
-# BIP-Project-sales-forecasting
-0. train e validation. Sia per train set che per test set  ho usato  con scope=0, TRAIN: inizio dati fino a 12/2018. VALIDATION: 12/2018 fino alla fine
-1.salesW-1 è molto significativo, anche salesW-2
-2.price è significativo
-3.con la regressione Rollign Windows di 1 e 5 sono significative
-4. prodotti correlati nel train set sono molto significativi, ma solo pochi sono correlati. (Con regressione considero prod con corrPearson>0.6, mi ha dato perfprmance migliore)
+# # BIP-Project-sales-forecasting
+
+# Course Project
+Dataset Description:
+
+This year project is based on a sales forecasting dataset with aggregated information for different products (SKU) throughout a 3-years time window:
+•
+•
+Weekly data (Dec 2016 – Dec 2019)
+Data are available for 43 SKU but the target for the prediction is restricted to 12 SKUs
+
+SKU | Unique identifier for the products | int
+Pack | Type of pack in which the product is sold | str
+Size (GM) | Product weight | float
+Brand | Product brand | str
+Price | Planned price of sale for the product in week w | float
+POS_exposed w-1 | Number of stores in which the product was put on evidence at w-1 | int
+Volume_on_promo w-1 | % Volume of product put on promo at w-1 | float
+Sales w-1 | Sales of product at w-1 (lagged target) | int
+Scope | Boolean that indicates SKUs in scope (target) | bool
