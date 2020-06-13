@@ -5,8 +5,10 @@
 
 This year project is based on a sales forecasting dataset with aggregated information for different products (SKU) throughout a 3-years time window:
 •
+
 •
-_Weekly data (Dec 2016 – Dec 2019)
+
+_Weekly data (Dec 2016 – Dec 2019)_
 Data are available for 43 SKU but the target for the prediction is restricted to 12 SKUs
 
 **SKU** | Unique identifier for the products | int
